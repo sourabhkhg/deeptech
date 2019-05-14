@@ -1,0 +1,30 @@
+.hv-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: $header-height;
+    border-bottom: 1px solid $border-color;
+}
+
+.logo {
+    font-size: 2em;
+    padding: 4px 6px;
+}
+
+nav {
+    text-align: right;
+    padding: 4px 6px;
+}
+
+nav>a {
+    font-size: 1.2em;
+    margin-right: 1em;
+    letter-spacing: -0.05em;
+}
+
+nav>a:last-child {
+    margin-right: 0;
+}

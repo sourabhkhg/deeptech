@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+# - name: About
+#   link: /about
+# - name: Big Data
+#   link: /big-data
+# - name: Machine Learning
+#   link: /machine-learning
+# - name: Web Technology
+#   link: /web-technology
+- name: Blog
+  link: /blog

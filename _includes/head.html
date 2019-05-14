@@ -1,0 +1,11 @@
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>
+        Home
+    </title>
+    <link rel="stylesheet" href="{{"/assets/css/main.css" | relative_url }}">
+    {% if jekyll.environment == 'production' and site.analytics %}
+        {% include analytics.html %}
+    {% endif %}
+</head> 
