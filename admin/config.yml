@@ -16,10 +16,13 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Section", name: "section", widget: "select", options:
+      - label: "Section"
+        name: "section"
+        widget: "select"
+        options:
           - { label: "Machine Learning", value: "machine_learning" }
-          - { label: "Big Data", value: "big_data" } 
-          - { label: "Web Technology", value: "web_technology" }}
+          - { label: "Big Data", value: "big_data" }
+          - { label: "Web Technology", value: "web_technology" }
       - { label: "Title", name: "title", widget: "string", tagname: "h1" }
       - label: "Author"
         name: "author"
@@ -27,9 +30,10 @@ collections: # A list of collections the CMS should be able to edit
         options:
           - { label: "Dan Urbanowicz", value: "dan_urbanowicz" }
           - { label: "John Doe", value: "john_doe" }
-      - { label: "Auther Index", name: "author_index", widget: "number" }    
+
+      - { label: "Auther Index", name: "author_index", widget: "number" }
       - { label: "Team Index", name: "team_index", widget: "number" }
-      - { label: "Tags", name: "tags", widget: "array", tagname: "span" }    
+      - { label: "Tags", name: "tags", widget: "array", tagname: "span" }
       - {
           label: "Intro Paragraph",
           name: "intro_paragraph",
@@ -37,4 +41,3 @@ collections: # A list of collections the CMS should be able to edit
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown", required: false }
-    
