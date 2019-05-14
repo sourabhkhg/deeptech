@@ -33,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - { label: "Auther Index", name: "author_index", widget: "number" }
       - { label: "Team Index", name: "team_index", widget: "number" }
-      - { label: "Tags", name: "tags", widget: "array", tagname: "span" }
+      - { label: "Tags", name: "tags", widget: "list", tagname: "span" }
       - {
           label: "Intro Paragraph",
           name: "intro_paragraph",
